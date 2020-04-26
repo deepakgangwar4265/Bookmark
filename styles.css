@@ -179,7 +179,7 @@ nav li {
 }
 
 .features {
-  height: 90vh;
+  min-height: 90vh;
   width: 100vw;
   padding: 0 30px;
   text-align: center;
@@ -256,7 +256,7 @@ nav li {
 
 .card {
   width: 240px;
-  height: 40vh;
+  min-height: 40vh;
   margin: 20px;
   text-align: center;
   border-radius: 10px;
@@ -395,6 +395,7 @@ a {
 
 .hero {
   width: 100vw;
+  min-height: 120vh;
   margin-top: 150px;
   text-align: center;
 }
