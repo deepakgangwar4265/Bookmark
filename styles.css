@@ -1,0 +1,419 @@
+@font-face {
+  font-family: rubikreg;
+  src: url(font/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: rubikmed;
+  src: url(font/Rubik-Medium.ttf);
+}
+
+body {
+  font-family: rubikreg;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  color: #252b46;
+}
+
+.intro-para {
+  color: #9194a1;
+  padding: 10px 10px;
+  line-height: 24px;
+}
+
+.upper-nav {
+  width: 100vw;
+  height: 100px;
+  padding: 40px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.logo {
+  height: 35px;
+}
+
+.ham {
+  height: 22px;
+  position: absolute;
+  top: 46px;
+  right: 40px;
+}
+
+nav {
+  position: fixed;
+  display: none;
+  top: -36px;
+  left: 0;
+  padding: 16px;
+  text-align: center;
+  font-size: 26px;
+  color: whitesmoke;
+  width: 100vw;
+  height: 0;
+  letter-spacing: 3px;
+  background-color: #252b46;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  border-top: 1px solid rgba(245, 245, 245, 0.3);
+  margin: 30px;
+  padding-top: 30px;
+}
+
+.nav-logo {
+  height: 30px;
+  position: relative;
+  top: 24px;
+  left: -60px;
+}
+
+.nav-close {
+  height: 20px;
+  position: relative;
+  right: -40px;
+  top: 19px;
+}
+
+.login {
+  border: 2px solid whitesmoke;
+  border-radius: 6px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.login:hover {
+  background-color: whitesmoke;
+  color: #252b46;
+}
+
+.active-nav {
+  display: block;
+  height: 100vh;
+  top: 0;
+  z-index: 5;
+}
+
+.active-nav .upper-nav {
+  width: 100vw;
+  height: 100px;
+  padding: 40px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.active-nav .logo {
+  height: 35px;
+}
+
+.active-nav .ham {
+  height: 22px;
+  position: absolute;
+  top: 46px;
+  right: 40px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.left-btn {
+  width: 40vw;
+  height: auto;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: whitesmoke;
+          box-shadow: whitesmoke;
+  margin: 10px;
+  font-size: 18px;
+  display: inline-block;
+  font-family: rubikreg;
+  text-align: center;
+  background-color: #5368df;
+  color: whitesmoke;
+}
+
+.left-btn:hover {
+  -webkit-box-shadow: 0 2px 0 4px rgba(226, 226, 226, 0.315);
+          box-shadow: 0 2px 0 4px rgba(226, 226, 226, 0.315);
+}
+
+.right-btn {
+  width: 40vw;
+  height: auto;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: whitesmoke;
+          box-shadow: whitesmoke;
+  margin: 10px;
+  font-size: 18px;
+  display: inline-block;
+  font-family: rubikreg;
+  text-align: center;
+  background-color: whitesmoke;
+  color: #9194a1;
+}
+
+.right-btn:hover {
+  -webkit-box-shadow: 0 2px 0 4px rgba(226, 226, 226, 0.315);
+          box-shadow: 0 2px 0 4px rgba(226, 226, 226, 0.315);
+}
+
+.btn-lg {
+  width: 90%;
+}
+
+.features {
+  height: 90vh;
+  width: 100vw;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.features-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.feature-list-item {
+  color: #9194a1;
+  font-size: 21px;
+  height: 60px;
+  padding-top: 18px;
+  border-top: 0.1px solid #9194a1;
+}
+
+.feature-list-item:hover {
+  color: #252b46;
+}
+
+.last-item {
+  border-bottom: 0.1px solid #9194a1;
+}
+
+.carousel {
+  width: 85vw;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+
+.features-img {
+  width: 300px;
+}
+
+.red-bar {
+  width: 70%;
+  height: 5px;
+  position: relative;
+  top: 11.9px;
+  left: 50px;
+  background-color: #fa5757;
+}
+
+.bookmark {
+  text-align: center;
+}
+
+.download {
+  width: 100vw;
+  height: auto;
+  padding: 0 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 240px;
+  height: 40vh;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 4px 4px rgba(152, 141, 212, 0.048);
+          box-shadow: 3px 3px 4px 4px rgba(152, 141, 212, 0.048);
+}
+
+.browser-logo {
+  margin: 20px;
+  height: 80px;
+}
+
+.dots {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.faq {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.faq-questions {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.faq-questions li {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.103);
+}
+
+.question {
+  margin: 20px 0;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.arrow {
+  display: inline-block;
+  position: relative;
+  right: 0;
+}
+
+.answer {
+  color: #9194a1;
+  margin-bottom: 20px;
+  display: none;
+  height: 0;
+}
+
+.contact {
+  background-color: #5368df;
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+  margin: 10px 0;
+}
+
+span {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.red-btn {
+  background-color: #fa5757;
+}
+
+input {
+  width: 90%;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+}
+
+input::-webkit-input-placeholder {
+  padding: 10px 0;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+input:-ms-input-placeholder {
+  padding: 10px 0;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+input::-ms-input-placeholder {
+  padding: 10px 0;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+input::placeholder {
+  padding: 10px 0;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  background-color: #252b46;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list li {
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.footer-logo {
+  height: 26px;
+}
+
+.icon-social {
+  margin: 20px;
+}
+
+.hero {
+  width: 100vw;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.hero-img {
+  width: 80vw;
+}
+
+.intro {
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */
